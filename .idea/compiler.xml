@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
+        <module name="code-generator" />
+        <module name="authcenter" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="authccenter" target="1.8" />
+      <module name="authcenter" target="1.5" />
+      <module name="authserver" target="1.8" />
+      <module name="code-generator" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="parent" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="authccenter" options="-parameters" />
+      <module name="authserver" options="-parameters" />
+      <module name="code-generator" options="" />
+      <module name="demo" options="-parameters" />
+    </option>
+  </component>
+</project>
